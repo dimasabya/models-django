@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{judul}}</title>
+</head>
+<body>
+    <div style="text-align: center; background-color: burlywood; width: 100%;">
+        <h1>{{judul}}</h1>
+        <p>{{heading}}</p>
+    </div>
+   
+
+    <table>
+        
+        {% for data in postingan  %}
+        <table">
+            <div style="background-color: aqua; table-layout: auto; text-align: center;">
+                <h2>{{data.judul}}</h2>
+                <p>{{data.body}}</p>
+            </div>
+        </table>
+        {% endfor %}
+            
+    </table>
+</body>
+</html>
